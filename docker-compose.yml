@@ -18,7 +18,7 @@ x-airflow-common:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
-    - ./data:/home/airflow/data
+    - ./data:/opt/airflow/data
     - ./tests:/opt/airflow/tests
     - ./visualization:/opt/airflow/visualization
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
